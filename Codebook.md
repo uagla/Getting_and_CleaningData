@@ -2,10 +2,10 @@
 ##Instructions of the run_analysis.r code. 
 1. Before running the code: 
     * Download the file from the website:  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-   *Unzip it and save the unzipped folder with the UCI HAR Dataset name  in a working directory. This will be the working directory for the script. If it is not the default R working directory, please change it.
+    * Unzip it and save the unzipped folder with the UCI HAR Dataset name  in a working directory. This will be the working directory for the script. If it is not the default R working directory, please change it.
 2.  Reads and Appends the datasets from the train data set section (using ReadAppendSet() 
      function):
-   *X_train.txt:  it has the data with the features names in columns.
+   * X_train.txt:  it has the data with the features names in columns.
    * y_train.txt: contains the activity labels
    * subject_train.txt:  it includes the subject/participant id number. 
    * features.txt: list of the registered features. 
@@ -26,9 +26,9 @@ These functions are used within the main function MainTidy. It contains two para
   * file2: outputs to a .txt file format the results from step 5. 
 
 ### Appendix: list of the variables within the data sets:
-  *Subject: Subject's id.
-  *ActName: Type of activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,  SITTING, STANDING,  LAYING).
-  *Feature Selection: 
+  * Subject: Subject's id.
+  * ActName: Type of activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,  SITTING, STANDING,  LAYING).
+  * Feature Selection: 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
